@@ -1,0 +1,5 @@
+{
+  "name": "Brevo Aura AI Orchestrator",
+  "description": "A decoupled, event-driven messaging system using Brevo APIs for behavioral event tracking and transactional email orchestration.",
+  "requestFramePermissions": []
+}

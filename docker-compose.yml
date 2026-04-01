@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    volumes:
+      # Mount data files to persist them across container restarts
+      - ./audit_logs.json:/app/audit_logs.json
+      - ./chat_backups.json:/app/chat_backups.json
+    restart: unless-stopped
